@@ -1,0 +1,73 @@
+/* frontend/src/styles/HomePage.css */
+.homepage-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    /* El backgroundImage ya se aplica desde el JSX */
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.homepage-content {
+    padding: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    max-width: 80%;
+ 
+    filter: brightness(1); 
+}
+
+
+.homepage-content {
+    padding: 300px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    max-width: 80%;
+    filter: none; 
+}
+
+.homepage-content h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+}
+
+.homepage-text {
+    color: #ccc;
+    font-size: 1.1em;
+}
+
+.homepage-button {
+    padding: 15px 40px;
+    background-color: #FFC83D; /* Amarillo */
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.homepage-button:hover {
+    background-color: #e5b836; 
+    border-radius: 30px
+}

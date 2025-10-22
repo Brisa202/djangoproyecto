@@ -1,0 +1,21 @@
+/* frontend/src/index.css */
+
+/* Restablece estilos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Puedes cambiar la fuente si lo deseas */
+}
+
+/* Establece el fondo oscuro para toda la aplicación */
+body, #root {
+  background-color: #1c1c1c; /* Fondo oscuro común en tu diseño */
+  min-height: 100vh;
+}
+
+/* Oculta los puntos de enfoque que aparecen al usar el teclado */
+button:focus, input:focus, a:focus {
+  outline: none;
+  box-shadow: none;
+}

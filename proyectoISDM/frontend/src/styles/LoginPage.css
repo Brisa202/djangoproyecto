@@ -1,0 +1,98 @@
+.login-page-container {
+    height: 100vh;
+    display: flex;
+    /* Centrar horizontalmente */
+    justify-content: center; 
+    /* Centrar verticalmente */
+    align-items: center;
+
+    background-size: cover;
+    background-position: center center;
+    
+    padding: 0;
+}
+
+.login-box {
+    width: 380px;
+    padding: 50px 30px;
+    background-color: #000000; /* Fondo negro sólido */
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(150, 122, 0, 0.671);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    width: 140px; 
+    height: auto;
+    filter: drop-shadow(0 0 8px #ffc83d88); 
+    width: 200px;
+}
+
+.login-title {
+    margin-bottom: 40px;
+    color: white; 
+    font-size: 30px; 
+}
+
+/* === INPUT minimalista (línea inferior dorada) === */
+.login-input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0 10px 0;
+    background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid #FFC83D; /* línea dorada */
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* blanco tenue */
+}
+/* =============================================== */
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    margin-top: 15px;
+    margin-bottom: 30px; 
+}
+
+.login-options a {
+    color: hsl(54, 100%, 60%); 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-button {
+    width: 100%;
+    padding: 18px;
+    background-color: #FFC83D; 
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ffce3c;
+    border-radius: 30px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

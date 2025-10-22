@@ -1,0 +1,192 @@
+/* === PÁGINA GENERAL === */
+.empleado-form-page {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  padding: 40px;
+  color: #fff;
+}
+
+/* === FORMULARIO CREAR/EDITAR === */
+.empleado-form-container {
+  background-color: #141414;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.empleado-form-container h2 {
+  color: #fddb3a;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.empleado-form label {
+  display: block;
+  color: #ccc;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.empleado-form input,
+.empleado-form select {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #000;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.empleado-form input:focus,
+.empleado-form select:focus {
+  border-color: #fddb3a;
+  box-shadow: 0 0 5px rgba(253, 219, 58, 0.5);
+  outline: none;
+}
+
+.btn-submit {
+  background-color: #fddb3a;
+  color: #000;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e6c434;
+  transform: translateY(-2px);
+}
+
+/* === ALERTAS === */
+.alert-box {
+  background-color: #141414;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.alert-success {
+  border-color: #7cf77d;
+  color: #7cf77d;
+}
+
+.alert-error {
+  border-color: #ff7b7b;
+  color: #ff7b7b;
+}
+
+/* === SWITCH PARA 'USUARIO ACTIVO' === */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch .track {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  background: #0e1015;
+  border: 1px solid #333;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+
+.switch .thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #6b7280;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.switch input:checked + .track {
+  background: #fddb3a;
+  border-color: #fddb3a;
+}
+
+.switch input:checked + .track .thumb {
+  transform: translateX(22px);
+  background: #0e1015;
+}
+
+.switch-label {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* === DIVISOR === */
+.divider {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin: 12px 0;
+}
+
+/* === GRID DE FORMULARIO === */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.align-end {
+  align-self: flex-end;
+}
+
+/* === BOTONES === */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #444;
+}
